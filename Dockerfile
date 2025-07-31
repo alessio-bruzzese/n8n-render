@@ -6,4 +6,5 @@ ENV N8N_HOST=n8n.onrender.com \
 
 EXPOSE 5678
 
+ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["n8n"]

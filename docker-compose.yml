@@ -1,0 +1,13 @@
+services:
+  n8n:
+    image: n8nio/n8n
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=informal
+      - N8N_BASIC_AUTH_PASSWORD=Ttna2.84AbVy2
+      - N8N_HOST=n8n-yourusername.onrender.com
+      - N8N_PORT=10000
+      - N8N_PROTOCOL=https
+      - WEBHOOK_URL=https://n8n-yourusername.onrender.com/
